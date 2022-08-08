@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Bangla', serif;
+    cursor: pointer;
+} 
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#89ABE3FF,#FCF6F5FF);
+}
+
+form{
+    width: 30rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3); 
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+form:before{
+    content: '';
+    position: absolute;
+    top: -2%;
+    right: 28%;
+    width: 130px;
+    height: 130px;
+    background: #728FCE;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .8;
+}
+
+ label{
+    font-size: 17px;
+    color: black;
+    margin-left: 7%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+ }
+
+ input{
+    width: 90%;
+    margin: 4% auto;
+    margin-bottom: 4%;
+    border: none;
+    outline: none; 
+    background: transparent;
+    color: #000000;
+    border-bottom: 1px solid rgb(0,0,0);
+ }
+
+ img{
+    float: left;
+    margin-right: 20px;
+
+ }
+
+ button{
+    width: 50%;
+    margin: 3% auto;
+    color: black;
+    font-size: 15px;
+    opacity: .9;
+    background: rgba(255,255,255,0.06);
+    padding: 10px 30px;
+    outline: none; 
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(0,0,0);
+    box-shadow: rgba(31,38,135,.37);
+ }

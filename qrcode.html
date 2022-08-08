@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="qr.css">
+
+ 
+
+<title>QR Code Generator</title>
+</head>
+
+<body>
+
+
+
+<img src=
+"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+	class="qr-code img-thumbnail img-responsive" />
+
+
+<form>
+
+	<label for="content">medical report</label>
+	<input type="text" id="content"/>
+
+	<button type="button" class="btn btn-default" id="generate" onclick="'window.location.href=new.html';">Generate</button>
+
+</form>
+
+<script src=
+"https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+<script>
+
+function htmlEncode(value) {
+return $('<div/>').text(value)
+	.html();
+}
+
+$(function () {
+
+$('#generate').click(function () {
+
+	let finalURL =
+'https://chart.googleapis.com/chart?cht=qr&chl=' +
+	htmlEncode($('#content').val()) +
+	'&chs=160x160&chld=L|0'
+
+	$('.qr-code').attr('src', finalURL);
+});
+});
+</script>
+</body>
+
+</html>
